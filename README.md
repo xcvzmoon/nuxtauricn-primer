@@ -69,6 +69,11 @@ Tauri notes
 
 - `src-tauri/tauri.conf.json` currently expects the frontend dev server at `http://localhost:3000` and `frontendDist` = `../dist` for bundled builds. Verify which Nuxt command produces the output Tauri expects (you may prefer `nuxt generate` if bundling a static site).
 - The project includes `@tauri-apps/cli` as a devDependency. Use your package manager or `npx tauri dev` / `npx tauri build` if you prefer.
+- To run the full Tauri development workflow (start the frontend and the native wrapper) use:
+
+```powershell
+bun tauri dev
+```
 
 Project structure (important files)
 
